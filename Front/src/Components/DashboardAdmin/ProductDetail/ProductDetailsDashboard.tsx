@@ -59,11 +59,16 @@ export default function DashboardProductDetail() {
 
   useEffect(() => {
     chargeProduct();
-    if (accessStatus !== "Admin") {
+    if (accessStatus !== "Admin" && accessStatus !== "Normal") {
       toast.error(`You don't have access`);
       setTimeout(() => {
         navigate("/");
       }, 2000);
+    }else if (accessStatus === "Normal") {
+      toast.error(`No puedes modificar el detalle`);
+      setTimeout(() => {
+        navigate("/someplace");
+      }, 3000);
     }
   }, []);
 

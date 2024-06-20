@@ -36,7 +36,7 @@
 
 .detailoneBooking{
     display: grid;
-    grid-template-columns: repeat(5, 0.5fr);
+    grid-template-columns: repeat(6, 0.5fr);
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: white;
@@ -47,6 +47,13 @@
 .detailoneBooking p{
     align-self: center;
     justify-self: center;
+}
+.iconX{
+    align-self: center;
+    justify-self: center;
+    color: red;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0 , 2);
+    cursor: pointer;
 }
 
 

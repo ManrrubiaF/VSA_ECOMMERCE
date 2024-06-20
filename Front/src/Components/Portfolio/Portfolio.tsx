@@ -24,7 +24,7 @@ export default function Portfolio() {
       }
     };
   }, []);
-  
+
   useEffect(() => {
     if (carouselRef.current.length > 0) {
       handleCarousel();
@@ -71,30 +71,31 @@ export default function Portfolio() {
 
   return (
     <div className={Styles.divMayor}>
-        <div className={Styles.HeadContainer}>
-            <h1> Portfolio </h1>
-        </div>
-      
+      <div className={Styles.HeadContainer}>
+        <h1> Portfolio </h1>
+      </div>
+
       <div className={Styles.gridContainer}>
         {Portfolio_array.length > 0 ? (
           Portfolio_array.map((onePic) => (
             <div key={onePic.id} className={Styles.picContainer}>
               <div className={Styles.carousel}>
-              {onePic!.links.map((photo, index) => (
-                <img
-                  key={index}
-                  className={Styles.Showimg}
-                  src={photo}
-                  alt="image carousel"
+                {onePic!.links.map((photo, index) => (
+                  <img
+                    key={index}
+                    className={Styles.Showimg}
+                    src={photo}
+                    alt="image carousel"
                   />
-              ))}
+                ))}
               </div>
               <p>{onePic.description}</p>
             </div>
           ))
         ) : (
-          <div>
-            <h3> Cargando imagenes</h3>
+          <div className={Styles.loadingContainer}>
+            <div className={Styles.loadingSpinner}></div>
+            <p>Cargando imagenes...</p>
           </div>
         )}
       </div>

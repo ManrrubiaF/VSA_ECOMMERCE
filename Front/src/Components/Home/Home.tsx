@@ -95,6 +95,11 @@ export default function Home() {
     };
   }, []);
 
+  const handleImgClick = () => {
+    const mapsUrl = 'https://maps.app.goo.gl/zAwe1pMS1uZTi1P97'
+    window.open(mapsUrl, '_blank')
+  }
+
   return (
     <div className={Styles.divMayor}>
       <div className={Styles.divContainer}>
@@ -162,11 +167,11 @@ export default function Home() {
             </p>
           </div>
           <div className={Styles.ubicacionContainer}>
-            <h1> Data de ubicacion</h1>
+            <h1> ¿Dónde estamos?</h1>
             <div className={Styles.ubicacionDiv}>
               <p> Villa Dolores, Cordoba</p>
               <p> 25 de Mayo nº 390</p>
-              <img src="/assets/imagenes/VDolores.jpg" alt="mapa" />
+              <img src="/assets/imagenes/VDolores.jpg" alt="mapa" onClick={handleImgClick}/>
             </div>
             <div className={Styles.ubicacionDiv}>
               <p> ciudad </p>

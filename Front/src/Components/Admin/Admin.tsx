@@ -94,7 +94,7 @@ export default function Admin() {
     } else if (optionSelected === "Portfolio") {
       setRenderOption(<PortfolioAdmin />);
     } else if (optionSelected === "CreatePortfolio") {
-      setRenderOption(<PortfolioCreate />)
+      setRenderOption(<PortfolioCreate />);
     } else {
       setRenderOption(<div>No se seleccionó ninguna opción.</div>);
     }
@@ -142,20 +142,28 @@ export default function Admin() {
       ) : (
         <div>
           <div className={Styles.buttonContainer}>
-            <div className={Styles.optionsContainer}>
-              <button onClick={() => dispatch(setRenderComponent("Portfolio"))}>
-                {" "}
-                Portfolio{" "}
-              </button>
-            </div>
-            <div className={Styles.optionsContainer}>
-              <button
-                onClick={() => dispatch(setRenderComponent("CreatePortfolio"))}
-              >
-                {" "}
-                Nuevo Portfolio{" "}
-              </button>
-            </div>
+            {accessStatus === "Admin" && (
+              <div className={Styles.optionsContainer}>
+                <button
+                  onClick={() => dispatch(setRenderComponent("Portfolio"))}
+                >
+                  {" "}
+                  Portfolio{" "}
+                </button>
+              </div>
+            )}
+            {accessStatus === "Admin" && (
+              <div className={Styles.optionsContainer}>
+                <button
+                  onClick={() =>
+                    dispatch(setRenderComponent("CreatePortfolio"))
+                  }
+                >
+                  {" "}
+                  Nuevo Portfolio{" "}
+                </button>
+              </div>
+            )}
             <div className={Styles.optionsContainer}>
               <button onClick={() => dispatch(setRenderComponent("products"))}>
                 {" "}
@@ -168,12 +176,14 @@ export default function Admin() {
                 Ventas{" "}
               </button>
             </div>
-            <div className={Styles.optionsContainer}>
-              <button onClick={() => dispatch(setRenderComponent("Create"))}>
-                {" "}
-                Crear producto{" "}
-              </button>
-            </div>
+            {accessStatus === "Admin" && (
+              <div className={Styles.optionsContainer}>
+                <button onClick={() => dispatch(setRenderComponent("Create"))}>
+                  {" "}
+                  Crear producto{" "}
+                </button>
+              </div>
+            )}
             <div className={Styles.optionsContainer}>
               <button onClick={() => dispatch(setRenderComponent("Resume"))}>
                 {" "}
@@ -200,14 +210,14 @@ export default function Admin() {
                 </button>
               </div>
             )}
-            {accessStatus === "Admin" && (
-              <div className={Styles.optionsContainer}>
-                <button onClick={() => dispatch(setRenderComponent("Solded"))}>
-                  {" "}
-                  Cargar venta{" "}
-                </button>
-              </div>
-            )}
+
+            <div className={Styles.optionsContainer}>
+              <button onClick={() => dispatch(setRenderComponent("Solded"))}>
+                {" "}
+                Cargar venta{" "}
+              </button>
+            </div>
+
             <div className={Styles.optionsContainer}>
               <button onClick={handleLogOut}> Cerrar Sesión </button>
             </div>

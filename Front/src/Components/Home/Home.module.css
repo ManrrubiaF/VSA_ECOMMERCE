@@ -48,6 +48,7 @@
     width: 20%;
     display: flexbox;
     margin-top: 1rem;
+    background-color: rgb(113, 203, 245);
     border: 1px solid black;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -62,9 +63,7 @@
     width: 15rem;
 }
 .ubicacionDiv img:hover{
-    position: center;
-    transform: scale(3);
-    translate: -15rem;
+    cursor: pointer;
 }
 
 .AboutContainer p {

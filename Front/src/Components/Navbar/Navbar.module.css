@@ -83,11 +83,13 @@
     margin-top: 1rem;
     margin-left: 1.5rem;
     margin-bottom: 1rem;
+    padding: 5px;
     width: 100%;
     color: black;
     text-decoration: dotted;
     background-color: white;
-    border: solid 1px black
+    border: solid 1px black;
+    border-radius: 15px 15px 15px 15px;
    
 }
 .buttonContainer button:hover{

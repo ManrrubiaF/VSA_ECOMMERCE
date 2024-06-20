@@ -30,6 +30,7 @@ type StockByProd = {
 export default function ResumeDashBoard() {
     const products = useAppSelector((state) => state.products)
     const token: string | null = sessionStorage.getItem('token');
+    const accessStatus = useAppSelector((state)=> state.user.User.access)
     const BACK_URL = process.env.REACT_APP_BACK_URL
     const [allBooking, setAllBooking] = useState<Booking[]>();
     const [stockByProduct, setStockByProduct] = useState<StockByProd[]>()
@@ -37,7 +38,12 @@ export default function ResumeDashBoard() {
 
 
     useEffect(() => {
-        getAllBookings();
+        if(accessStatus === "Admin"){
+            getAllBookings()
+        }
+        if(accessStatus === "normal"){
+            getBookingByUser()
+        }
     }, [])
     useEffect(() => {
         const {totalsArray, totalPricesSum} = getTotals()
@@ -45,6 +51,19 @@ export default function ResumeDashBoard() {
         setTotal(totalPricesSum)
 
     }, [allBooking])
+
+    const getBookingByUser = async () => {
+        try {
+            const response = await axios.get(`${BACK_URL}/booking/mybooking`,{
+                headers: {
+                    authorization: `Bearer ${token}`,
+                  },
+            })
+            setAllBooking(response.data);
+        } catch (error) {
+            console.error(error)        
+        }
+      }
 
     const getAllBookings = async () => {
         try {

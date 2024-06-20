@@ -3,6 +3,10 @@ import Styles from "./BookingDashboard.module.css";
 import { useState, useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../../../Redux/Hooks";
 import { setProducts } from "../../../Redux/Slice/productSlice";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import toast, { Toaster } from "react-hot-toast";
+
 
 type Bookings = {
   id: number;
@@ -22,6 +26,7 @@ export default function Booking() {
   const BACK_URL = process.env.REACT_APP_BACK_URL;
   const productData = useAppSelector((state) => state.products);
   const accessStatus = useAppSelector((state)=> state.user.User.access)
+  const myname = useAppSelector((state) => state.user.User.name)
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -49,6 +54,30 @@ export default function Booking() {
     }
   }
 
+  const handleDelete = (id: number) => {
+    const confirmacion = window.confirm(
+      "¿Estás seguro de que deseas eliminar este usuario?"
+    );
+
+    if (confirmacion) {
+      deleteBooking(id);
+    }
+  };
+
+  const deleteBooking = async (id: number) => {
+    try {
+      const response = await axios.delete(`${BACK_URL}/booking/delete/${id}`, {
+        headers: {
+          authorization: `Bearer ${token}`,
+        },
+      });
+      getBookingByUser();
+      toast.success(response.data);
+    } catch (error: any) {
+      toast.error(error.response.data);
+    }
+  };
+
   const getBookingData = async () => {
     try {
       const response = await axios.get(`${BACK_URL}/booking/allbooking`, {
@@ -73,12 +102,14 @@ export default function Booking() {
 
   return (
     <div className={Styles.divMayor}>
+      <Toaster />
       <div className={Styles.divTitles}>
         <label> Producto </label>
         <label> Color </label>
         <label> Stock </label>
         <label> Talle </label>
         <label> Usuario </label>
+        <label> Eliminar </label>
       </div>
       {bookingData ? (
         <div className={Styles.oneBooking}>
@@ -92,6 +123,13 @@ export default function Booking() {
                         <p>{oneBooking.details.stock}</p>
                         <p>{oneBooking.details.size || "no hay talle"}</p>
                         <p>{oneBooking.userName}</p>
+                        {oneBooking.userName === myname && (
+                          <FontAwesomeIcon
+                          icon={faX}
+                          className={Styles.iconX}
+                          onClick={() => handleDelete(oneBooking.id)}
+                        />
+                        )}
                     </div>
                 )
             })}            

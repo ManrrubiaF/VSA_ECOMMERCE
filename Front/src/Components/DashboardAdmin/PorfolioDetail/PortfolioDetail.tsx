@@ -76,7 +76,11 @@ export default function PortfolioDetail() {
   const deletePic = async () => {
     try {
       const response = await axios.delete(
-        `${BACK_URL}/portfolio/delete/${thisPic.id}`
+        `${BACK_URL}/portfolio/${thisPic.id}`, {
+          headers:{
+            authorization: `Bearer ${token}`
+          }
+        }
       );
       toast.success(response.data);
       navigate(-1);

@@ -9,6 +9,6 @@ productRouter.get('/active', productHandler.getActiveProducts);
 productRouter.put('/update/:id', accessMiddleware.adminValidation, productHandler.updateProduct);
 productRouter.delete('/delete/:id', accessMiddleware.adminValidation, productHandler.deleteProduct);
 productRouter.get('/:id', productHandler.getProductById);
-productRouter.get('/', accessMiddleware.adminValidation, productHandler.getAllProducts)
+productRouter.get('/', accessMiddleware.accessValidation, productHandler.getAllProducts)
 
 export default productRouter;
