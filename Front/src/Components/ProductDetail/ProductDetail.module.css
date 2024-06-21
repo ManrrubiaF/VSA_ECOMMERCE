@@ -115,3 +115,49 @@
     background-color: black;
     color: white;
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .divMayor{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        width: 100vw;
+        height: 100vh;
+    }    
+    .oneImg{
+        width: 120px;
+        height: 120px;
+    }
+    .showImg{
+        width: 120px;
+        height: 120px;
+    }
+    .containerImg{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+    }
+    .divWhatsapp{
+        margin-top: 2rem;
+    }
+    .containerAll{
+        width: fit-content;
+        height: fit-content;
+    }
+    .buttonandCarrousel{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: fit-content;
+    }
+    .nextButton{
+        position: relative;
+        right: 0;
+    }
+    .prevButton{
+        position: relative;
+        left: 0;
+    }
+    
+}

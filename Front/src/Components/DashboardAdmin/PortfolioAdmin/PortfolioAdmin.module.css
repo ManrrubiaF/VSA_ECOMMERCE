@@ -35,5 +35,9 @@
     .divMayor{
         width: 100vw;
     }
+    .dataPic{
+        width: 90vw;
+        align-self: center;
+    }
     
 }

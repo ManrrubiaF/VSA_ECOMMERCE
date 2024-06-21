@@ -276,7 +276,7 @@ export default function PortfolioDetail() {
             </div>
           </div>
           <div>
-            <div className={Styles.DivbuttonsFoot}>
+            <div className={Styles.DivButtonsFoot}>
               <button className={Styles.backAndUpdate} onClick={handleSubmit}>
                 {" "}
                 Guardar{" "}

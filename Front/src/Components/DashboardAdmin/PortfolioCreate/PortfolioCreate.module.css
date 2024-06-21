@@ -109,6 +109,7 @@
   .formDiv {
     display: flex;
     flex-direction: column;
+    margin-left: 1.4rem;
     background-color: white;
     width: 100vw;
     border-radius: 25px 25px 25px 25px;
@@ -129,9 +130,24 @@
   }
   .imagesContainer {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    width: fit-content;
+    margin: 0;
+    margin-left: 1.5rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+  }
+  .ImagesDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    align-content: center;
+    margin-left: 1rem;
+    width: 92vw;
+  }
+  .imageLabel{
+    align-self: center;
+  }
+  .iconUpload{
+    margin-bottom: 1rem;
   }
 }

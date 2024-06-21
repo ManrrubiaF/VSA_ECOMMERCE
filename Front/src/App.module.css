@@ -6,7 +6,8 @@
 @media screen and (max-device-width: 768px) and (orientation: portrait){
     .divMayor {
         display: flex;
-        width: 100vw !important;
+        width: fit-content;
+        height: 100vh;
         
     }
   }

@@ -521,7 +521,7 @@ export default function DashboardProductDetail() {
               </button>
               <button className={Styles.buttonDelete} onClick={handleDelete}>
                 {" "}
-                Eliminar producto{" "}
+                Eliminar {" "}
               </button>
             </div>
           </div>

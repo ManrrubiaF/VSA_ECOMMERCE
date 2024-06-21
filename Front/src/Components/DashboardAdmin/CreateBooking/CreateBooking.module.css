@@ -63,3 +63,38 @@
     height: 30rem;
     gap: 1rem;
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .divMayor{
+        width: 100vw;
+        height: 35vh;
+        padding: 0;
+        margin: 0;
+    }
+    .productsShop{
+        width: 100vw;
+        height: fit-content;
+        background-color: white;
+        padding-bottom: 2rem;
+    }
+    .selectProduct{
+        width: fit-content;
+        height: 35vh;
+    }
+    .shopDiv{
+        width: 20vw;
+    }
+    .shopDiv select{
+        width: fit-content;
+    }
+    .shopDiv input{
+        width: 10rem;
+    }
+    .shopDiv button{
+        width: 10rem;
+    }
+    .productSelect{
+        width: fit-content;
+        height: fit-content;
+    }
+}

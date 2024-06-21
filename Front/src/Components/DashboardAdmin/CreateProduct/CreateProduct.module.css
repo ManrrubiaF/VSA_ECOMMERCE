@@ -132,3 +132,45 @@ input[type=number]::-webkit-outer-spin-button{
 .CreateButton:hover{
     box-shadow: 2px 2px 2px 2px rgb(0,0,0,2);
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .divMayor{
+        width: 100vw;
+        height: 35vh;
+    }
+    .formDiv{
+        margin-left: 0.2rem;
+        width: 100vw;
+        height: fit-content;
+        align-content: center;
+    }
+    .form{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;        
+    }
+    .inputContainers{
+        width: 90vw;
+    }
+    .titleDiv{
+        align-content: center;
+        width: 90vw;
+    }
+    .inputContainers textarea{
+        margin:0;
+        width: 89vw;
+        overflow-y: scroll;
+    }
+    .ImagesDiv{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90vw;
+        margin: 0;
+        align-content: center;
+    }
+    .imagesContainer{
+        padding: 1rem;
+    }
+}

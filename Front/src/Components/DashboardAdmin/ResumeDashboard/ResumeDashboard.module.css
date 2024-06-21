@@ -65,3 +65,11 @@
 .buttonExcel:hover{
     box-shadow: 1px 1px 1px 1px rgb(255,255,255,1);
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait) {
+    .divMayor{
+        width: 100vw;
+        height: 35vh;
+    }
+    
+}

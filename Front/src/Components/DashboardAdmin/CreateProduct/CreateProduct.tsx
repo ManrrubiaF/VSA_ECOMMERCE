@@ -180,7 +180,7 @@ export default function CreateProduct() {
               onChange={handleChange}
             />
           </div>
-          <div>
+          <div className={Styles.titleDiv}>
             <h2> Cargar detalles (guardar antes de cargar producto)</h2>
           </div>
           <div className={Styles.inputContainers}>

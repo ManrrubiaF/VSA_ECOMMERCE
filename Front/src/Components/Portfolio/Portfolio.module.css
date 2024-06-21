@@ -100,8 +100,31 @@
     .divMayor{
         display: flex;
         flex-direction: column;
+        margin-top: 5rem;
         width: 90vw;
-        height: 80vh;
-        overflow-y: scroll;
+        height: fit-content;
+    }
+    .gridContainer{
+        width: 100vw;
+    }
+    .picContainer{
+        margin: 0;
+        width: 100vw;
+        height: fit-content;
+        background-color: lightgreen;
+    }
+    .carousel{
+        width: 120px;
+        height: 120px;
+    }
+    .picContainer img{
+        width: 120px;
+        height: 120px;
+    }
+    .picContainer p{
+        margin: 0;
+        margin-left: 1rem;
+        text-decoration:dotted;
+        
     }
 }
