@@ -111,7 +111,7 @@ export default function Products() {
             </div>
             <div className={Styles.filterDiv}>
                 <select name="order" onChange={handleOrderChange} value={filter.order}>
-                    <option value="" disabled >Ordenar por precio</option>
+                    <option value="" disabled  >Ordenar por precio</option>
                     <option value="Ascending">Ascendente (Menor a Mayor) </option>
                     <option value="Descending">Descendente (Mayor a Menor)</option>
                 </select>

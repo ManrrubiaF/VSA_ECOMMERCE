@@ -30,3 +30,10 @@
     margin-left: 25px;
     overflow-y: hidden;
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .divMayor{
+        width: 100vw;
+    }
+    
+}

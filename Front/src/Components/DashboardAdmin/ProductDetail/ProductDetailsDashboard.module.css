@@ -154,13 +154,49 @@ input[type=number]::-webkit-outer-spin-button{
 
 @media screen and (max-device-width: 768px) and (orientation: portrait) {
     .divMayor{
-        width: 100vh;
-        justify-items: start;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 20vh;
+        margin-top: 5rem;
     }
     .containerAllDetails{
-        width: 100vh;
-        margin-left: 0;
-        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: fit-content;
+        margin:0 ;
     }
+
+    .divTextarea{
+        width: 90vw;
+    }
+    .divTextarea textarea{
+        width: 90vw;
+    }
+    .imagesContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 1rem;
+        width: 90vw;
+    }
+    .imageItem{
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+    }
+    .imageItem img{
+        width: 120px;
+        height: 120px;
+    }
+    .iconX{
+        position: static;
+        background-color: none;
+    }
+    .iconUpload{
+        width: 150px;
+        height: 120px;
+    }
+
 }
 

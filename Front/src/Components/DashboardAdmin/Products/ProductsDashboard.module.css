@@ -67,3 +67,43 @@
     width: 120px;
     height: 120px;
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .divMayor{
+        width: 95vw;
+        height: 20vh;
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+    .filterDiv{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 85vw;
+        height: 30vh;
+        
+    }
+    .filterDiv select{
+        width: 80vw;
+    }
+    .divImg{
+        display: flex; 
+        margin-left: 0;   
+    }
+    
+    .divImg img{
+        width: 40px;
+        height: 40px;
+    }
+    .titleContainer{
+        width: 95vw;
+        margin: 0;
+        align-self: center;
+    }
+    .dataProduct{
+        background-color: white;
+        width: 95vw;
+        margin: 0;
+        padding-top: 1rem;
+    }
+}

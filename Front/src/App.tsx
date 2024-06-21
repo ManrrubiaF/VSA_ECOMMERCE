@@ -41,7 +41,6 @@ function App() {
     }
   }, [location]);
   return (
-    <div>
       <div className={Styles.divMayor}>
         <NavBar />
         <Routes>
@@ -117,8 +116,7 @@ function App() {
           <Route path="/recovery" element={<Recovery />} Component={Recovery} />
         </Routes>
       </div>
-      <Footer />
-    </div>
+      
   );
 }
 

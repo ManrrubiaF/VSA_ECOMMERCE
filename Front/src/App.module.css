@@ -1,3 +1,12 @@
 .divMayor{
     display: flex;
+    width: 100vw;
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .divMayor {
+        display: flex;
+        width: 100vw !important;
+        
+    }
+  }

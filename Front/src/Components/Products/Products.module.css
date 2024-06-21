@@ -24,15 +24,6 @@
     margin-bottom: 1rem;
 }
 
-.productsWithOutCart{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(4, auto); 
-    gap: 1rem; 
-    margin-left: 1rem;
-    margin-right: 5rem;
-    margin-bottom: 1rem;
-}
 
 
 .oneProduct {
@@ -103,14 +94,60 @@
 }
 
 @media screen and (device-width <= 768px) and (orientation: portrait){
-    .containerProducts{
-        display: grid !important;
-        grid-template-columns: repeat(3,1fr) ;
-        grid-template-rows: repeat(3, auto) !important;
-        margin:0 !important;
+    .divMayor{
+        margin: 0;
+    }
+    .cartNoInclude{
+        display: flex;
+        margin: 0;
+        justify-content: none;
+    }
+    .filterDiv{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin-top: 2rem;
+        align-self: center;
+    }
+    .filterDiv button{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border-radius: 15px;
+        align-self: center;
+        width: fit-content;
+        padding: 0.5rem;
+        cursor: pointer;
+    
+    }    
+    
+    .filterDiv select{
+        margin-bottom: 1rem;
+        width: 80vw;
+        color: rgb(0, 0, 0);
+    }
+    .filterDiv option{
+        color: white;
+        background-color: black;
     }
     
-    .filterDiv select {
-        color: white;
+    
+    .containerProducts{
+        display: grid !important;
+        grid-template-columns: repeat(3,0fr) ;
+        grid-template-rows: repeat(3, 0fr) !important;
+        margin:0 ;
     }
+    .oneProduct{
+        width: 20vw;
+        height: auto;
+    }
+    .imageContainer{
+        width: 20vw;
+        height: 20vw;
+    }
+    .Showimg{
+        width: 20vw;
+        height: 20vw;
+    }
+    
 }

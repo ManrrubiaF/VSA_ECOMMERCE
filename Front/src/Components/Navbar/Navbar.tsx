@@ -43,6 +43,7 @@ export default function NavBar() {
   const handleProductsClick = () => {
     dispatch(resetPagination());
     navigate("/products");
+    setIsMobileMenuOpen(false)
   };
 
   const toggleMobileMenu = () => {
@@ -70,25 +71,26 @@ export default function NavBar() {
           {isMobileMenuOpen && (
             <div className={Styles.mobileMenu}>
               <ul>
-                <li onClick={() => navigate("/")}>Inicio</li>
-                <li onClick={() => navigate("/HySLaboral")}>
+                <li onClick={() => {navigate("/"); setIsMobileMenuOpen(false)}}>Inicio</li>
+                <li onClick={() => {navigate("/HySLaboral"); setIsMobileMenuOpen(false)}}>
                   Higiene y Seguridad laboral
                 </li>
-                <li onClick={() => navigate("/HySIndustrial")}>
+                <li onClick={() => {navigate("/HySIndustrial"); setIsMobileMenuOpen(false)}}>
                   Higiene y Seguridad industrial
                 </li>
-                <li onClick={() => navigate("/HySAmbiental")}>
+                <li onClick={() => {navigate("/HySAmbiental"); setIsMobileMenuOpen(false)}}>
                   Higiene y Seguridad ambiental
                 </li>
-                <li onClick={() => navigate("/ControlPlagas")}>
-                  Control de Plagas
-                </li>
-                <li onClick={() => navigate("/Portfolio")}>
-                  Portfolio
-                </li>
-                <li onClick={() => navigate("/SeguridadIncendios")}>
+                <li onClick={() => { navigate("/SeguridadIncendios"); setIsMobileMenuOpen(false)} }>
                   Seguridad contra incendios
                 </li>
+                <li onClick={() => {navigate("/ControlPlagas"); setIsMobileMenuOpen(false)}}>
+                  Control de Plagas
+                </li>
+                <li onClick={() => {navigate("/Portfolio"); setIsMobileMenuOpen(false)}}>
+                  Portfolio
+                </li>
+                
                 <li onClick={handleProductsClick}>Productos</li>
               </ul>
             </div>

@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color:  rgb(45,64,243);
     top: 0;
-    width: 10vw;
+    width: 100vw;
     bottom: 0;
     border-right: 1px solid black;
     
@@ -44,6 +44,7 @@
     width: 97vw;
     background-color: lightgray;
     border: solid black;
+    z-index: 9999;
 }
 .mobileMenu li{
     list-style-type: none;

@@ -28,3 +28,24 @@
 .textContainer p{
     color: black;
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .divMayor{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .textContainer{
+        margin-top: 5rem;
+        width: 90vw;
+        align-self: center;
+    }
+    .imgContainer{
+        width: 100vw;
+    }
+    .imgContainer img{
+        margin-top: 5rem;
+        width: 100vw;
+    }
+
+}

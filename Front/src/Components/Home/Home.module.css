@@ -75,10 +75,52 @@
 
 @media screen and (max-device-width: 768px) and (orientation: portrait){
     .divMayor{
-        width: 80vw !important;
+        display: flex;
+        flex-direction: column;
+        width: 100vw; 
+        margin: 0
     }
     .divContainer{
-        width: 80vw !important;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .AboutContainer{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+    }
+    
+    .contentData{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 90vw;
+        margin: 0;
+    }
+    .Showimg{
+        margin-top: 5.3rem;
+        overflow-y: hidden;
+        width: 100vw;
+        max-height: 80px;
+    }
+
+    .carousel{
+        width: 100vw;
+    }
+
+    .ubicacionContainer{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 90vw;   
+        margin: 0; 
+    }
+    .ubicacionDiv{
+        width: 90vw;
+    }
+    .ubicacionDiv img{
+        width: 100%;
     }
    
    

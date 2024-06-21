@@ -99,3 +99,27 @@
     
     
 }
+
+@media screen and (max-device-width: 768px) and (orientation: portrait){
+    .logginDiv{
+        align-content: center;
+        width: 100vw;
+        padding-left: 25%;
+    }
+    .divMayor{
+        align-items: center;
+        width: 100vw;
+        margin-top: 3rem;
+    }
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .buttonContainer{        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 1.5rem;
+    }
+    
+}
