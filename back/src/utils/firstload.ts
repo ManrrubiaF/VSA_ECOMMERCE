@@ -13,10 +13,6 @@ async function firstload() {
 
     try {
         for (const product of products) {
-<<<<<<< HEAD
-
-=======
->>>>>>> 2f3c097 (sync)
             const {
                 price,
                 name,
@@ -32,10 +28,6 @@ async function firstload() {
                 active,
                 category
             })
-<<<<<<< HEAD
-=======
-            console.log(productCreated.id)
->>>>>>> 2f3c097 (sync)
             for (const oneDetail of details) {
                 await ProductDetail.create({
                     color: oneDetail.color,
