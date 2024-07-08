@@ -12,11 +12,11 @@ export class Product extends Model {
     price!: string;
     @Column
     name!: string;
-    @Column
+    @Column({allowNull: true})
     description!: string;
     @Column({defaultValue: true})
     active!: Boolean;
-    @Column
+    @Column({defaultValue: ""})
     category!: string;
     @CreatedAt
     createdAt!: Date;

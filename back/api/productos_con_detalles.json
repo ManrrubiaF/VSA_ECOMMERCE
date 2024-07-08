@@ -1,0 +1,1054 @@
+{
+  "products": [
+    {
+      "name": " Anteojos Seguridad EcoLine Oscuro ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Anteojos Seguridad EcoLine Transparente ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "7",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " AROS 1KG ",
+      "description": null,
+      "price": null,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "41",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " AROS 5KG ",
+      "description": null,
+      "price": null,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "30",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Baliza triangulo  ",
+      "description": null,
+      "price": 5010,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "4",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " BALIZA TRIANGULO USADO ",
+      "description": null,
+      "price": 2500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Bandolera Con Reflectarios  ",
+      "description": null,
+      "price": 13500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "4",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Botiquin Primero Auxilio Madera Colgar ",
+      "description": null,
+      "price": null,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": null,
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Botiquin Primero auxilio PROTEC 7 Unid. ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "3",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Calco peligro Choque electrico  ",
+      "description": null,
+      "price": null,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": null,
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Atencion Maquinas en Movimiento ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Atencion Material Inflamable 30x20 ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel ATENCION Salida y Entrada de Vehiculo 25x30cm ",
+      "description": null,
+      "price": 4500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": "Cartel Baño Caballero 30x15",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel baño Caballero Men 14x11 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Baño Damas 30x15 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel baño Damas Women 14x11 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel BAÑOS 30x15 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "6",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Cuidado con el Perro  15x25 ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "3",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Cuidado con el Perro 20x15 PASTOR INGLES ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "5",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Gas 16x20cm (amarillo) ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Horarios Atencion 20x13 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Llave de Gas 30x20 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Lo estamos Filmando 30x20 ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Mantener Orden y Limpieza 25x30Cm ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Matafuego 28x22 ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "6",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Matafuego con flecha 20x15 ",
+      "description": null,
+      "price": 4400,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Matafuego con flecha 28x15 ",
+      "description": null,
+      "price": 4400,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "7",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Material Inflamable 15x15 ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Peligro Choque electrico 15x15 ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel peligro combustible inflamable 15x15 ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "3",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Prohibido Estacionar 15x25 ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "4",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Prohibido Estacionar 20x30 ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Prohibido Fumar 15x15 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Prohibido Fumar 30x25 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Salida de Emergencia derecha 40x11 ",
+      "description": null,
+      "price": 4500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Salida de Emergencia Derecha 20x30 ",
+      "description": null,
+      "price": 4500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "3",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Salida de Emergencia izquierda 40x11 ",
+      "description": null,
+      "price": 4500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Salida de Emergencia Izquierda 20x30 ",
+      "description": null,
+      "price": 4500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Salida Emergencia 40x11 ",
+      "description": null,
+      "price": 4500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Salida Emergencia 45x15 ",
+      "description": null,
+      "price": 4500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Siga Flecha Derecha 50x20 ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "4",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Taller Mecanico 30x25 ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cartel Vereda Calle 25x10 ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Cinta de Peligro ",
+      "description": null,
+      "price": 2000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Dispensador Alcool en Gel ",
+      "description": null,
+      "price": 30000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Equipo de Hombre Trabajando ",
+      "description": null,
+      "price": 15000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Equipo Hombre Trabajando Completo ",
+      "description": null,
+      "price": 120000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Equipo Motoguadaña Completo ",
+      "description": null,
+      "price": 120000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Guantes Recubiertos ",
+      "description": null,
+      "price": 3500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "6",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " IDENTIFICADOR PERSONAL AZUL ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "6",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " IDENTIFICADOR PERSONAL TRANSPARENTE ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " LLAVERO LENTES SEGURIDAD ECO-LINE ",
+      "description": null,
+      "price": 4500,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "8",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " LONA TRENZADA 3X5 ",
+      "description": null,
+      "price": 30000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " OJOS DE GATO AMARILLO P/EMPOTRAR ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "10",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " OJOS DE GATO BLANCO P/EMPOTRAR ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "9",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " OJOS DE GATO ROJO P/EMPOTRAR ",
+      "description": null,
+      "price": 3000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "8",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Pala De Mano ",
+      "description": null,
+      "price": 14000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Parlante Sony ",
+      "description": null,
+      "price": 85000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Peligro Alta tension  25x30 ",
+      "description": null,
+      "price": 6000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " PELIGRO NO OPERAR 15X25 ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " PELIGRO NO OPERAR 20X30 ",
+      "description": null,
+      "price": 6000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Pelota Basquet Mikasa ",
+      "description": null,
+      "price": 35000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Pelota Voley Wilson ",
+      "description": null,
+      "price": 30000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " POSTE DE RIEGO ",
+      "description": null,
+      "price": 4000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "8",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Regulador De Tensión ",
+      "description": null,
+      "price": 120000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Respirador 3M 6100 ",
+      "description": null,
+      "price": 5000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Respirador Facial 3M ",
+      "description": null,
+      "price": 110000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "3",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Rompevientos T/L ",
+      "description": null,
+      "price": 11000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "5",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Rompevientos T/M ",
+      "description": null,
+      "price": 11000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "7",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Rompevientos T/S ",
+      "description": null,
+      "price": 11000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "8",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Rompevientos T/XL ",
+      "description": null,
+      "price": 11000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Sierra Circular Makita 5402a ",
+      "description": null,
+      "price": 600000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Sierra Circular Skilsaw ",
+      "description": null,
+      "price": 550000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Sierra Dewalt ",
+      "description": null,
+      "price": 650000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "1",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Sierra Sensitiva ",
+      "description": null,
+      "price": 85000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Stickers para casco ",
+      "description": null,
+      "price": 300,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "180",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Tapones auditivos ",
+      "description": null,
+      "price": 1000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "12",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Traffic Cones 28” ",
+      "description": null,
+      "price": 15000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    },
+    {
+      "name": " Traffic Cones 36” ",
+      "description": null,
+      "price": 20000,
+      "category": null,
+      "details": [
+        {
+          "color": "negro",
+          "stock": "2",
+          "image": []
+        }
+      ]
+    }
+  ],
+  "data":[
+      {
+        "aboutText": "",
+        "videos": [],
+        "photos": ["https://res.cloudinary.com/drufv1rxz/image/upload/v1696481135/d5gnga71kfe6hlqbrjhq.jpg","https://res.cloudinary.com/drufv1rxz/image/upload/v1696481135/dkesgfuhkeqxgm22dhg7.jpg", "https://res.cloudinary.com/drufv1rxz/image/upload/v1696481134/leria9pyrtbmc20o09an.jpg"],
+        "email": "",
+        "socialLinks": ["https://www.facebook.com/EstudiosVsa.Higiene.Seguridad", ""]
+      }
+      
+    ]
+}

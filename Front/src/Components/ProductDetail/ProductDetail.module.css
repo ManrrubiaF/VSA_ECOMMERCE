@@ -3,17 +3,19 @@
     justify-content: center;
     align-items: center; 
     height: 100vh; 
-    width: 80vw;
+    width: 90vw;
     background-color: none; 
 }
 
 .containerAll {
     display: flex;
-    width: 80vw;
-    height: 400px;
-    padding: 2rem;
-    margin: 2rem;
+    width: 50vw;
+    height: fit-content;
+    -ms-flex-align: center;
     background-color: white;
+    padding: 1rem;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: -2px -2px 3px 3px rgba(0, 0, 0, 0.8);
 }
 
 .containerImg{
@@ -80,9 +82,32 @@
 .details{
     display: grid;
     grid-template-columns: repeat(1,0.2fr);
-    margin-left: 2rem;
-    width: max-content;
-    height: max-content;
+    width: fit-content;
+    height:fit-content;
+}
+.details h3{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    text-shadow: 3px 3px 3px 3px rgb(78, 78, 204, 2);
+
+    text-decoration: underline;
+    font-size: 32px;
+}
+.details p{
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+
+}
+.details label{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.details select{
+    width: fit-content;
+    background-color: black;
+    color: white;
 }
 
 .addbutton{

@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from "react";
 import { useAppSelector } from "../../Redux/Hooks";
 import { useAppDispatch } from "../../Redux/Hooks";
-import { setData } from '../../Redux/Slice/contactSlice';
-import axios from 'axios';
-
+import { setData } from "../../Redux/Slice/contactSlice";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import Styles from "./Home.module.css";
 
 interface DataInfo {
@@ -23,7 +23,10 @@ export default function Home() {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement[]>([]);
   const intervalRef = useRef<NodeJS.Timeout>();
-  const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const years_passed = currentYear - 2017;
 
   useEffect(() => {
     if (dataAbout.videos?.length > 0) {
@@ -95,11 +98,6 @@ export default function Home() {
     };
   }, []);
 
-  const handleImgClick = () => {
-    const mapsUrl = 'https://maps.app.goo.gl/zAwe1pMS1uZTi1P97'
-    window.open(mapsUrl, '_blank')
-  }
-
   return (
     <div className={Styles.divMayor}>
       <div className={Styles.divContainer}>
@@ -131,7 +129,7 @@ export default function Home() {
             <h1> Sobre Nosotros </h1>
             <p>
               En VSA, nos dedicamos a proporcionar soluciones integrales en
-              seguridad y bienestar laboral. Con más de [X] años de experiencia
+              seguridad y bienestar laboral. Con más de {years_passed} años de experiencia
               en el sector, nos hemos consolidado como líderes en el mercado,
               brindando servicios de alta calidad y confiabilidad a nuestros
               clientes.
@@ -169,14 +167,46 @@ export default function Home() {
           <div className={Styles.ubicacionContainer}>
             <h1> ¿Dónde estamos?</h1>
             <div className={Styles.ubicacionDiv}>
-              <p> Villa Dolores, Cordoba</p>
-              <p> 25 de Mayo nº 390</p>
-              <img src="/assets/imagenes/VDolores.jpg" alt="mapa" onClick={handleImgClick}/>
+              
+            <p>Oficina Hig.Y Seg. </p>
+              <p> Cordoba Capital</p>
+              <div className={Styles.whatsapp}>
+                <img src="/assets/icons/whatsapp.svg" alt="whatsapp icon" />
+                <a
+                  href={`https://api.whatsapp.com/send?phone=543515118943&text=%C2%A1Hola!%20Vengo%20de%20la%20p%C3%A1gina%20de%20VSA.%20Queria%20hacerte%20una%20consulta.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +543515118943
+                </a>
+              </div>
+              
             </div>
             <div className={Styles.ubicacionDiv}>
-              <p> ciudad </p>
-              <p> direccion</p>
-              <p> mapa de google</p>
+            <p>Oficina Tecnica Traslasierras</p>
+              <p> Villa Dolores, Cordoba</p>
+              <div className={Styles.whatsapp}>
+                <img src="/assets/icons/whatsapp.svg" alt="whatsapp icon" />
+                <a
+                  href={`https://api.whatsapp.com/send?phone=5435446630993&text=%C2%A1Hola!%20Vengo%20de%20la%20p%C3%A1gina%20de%20VSA.%20Queria%20hacerte%20una%20consulta.`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +543544663099
+                </a>
+              </div>
+              <button
+                className={Styles.defaultButton}
+                onClick={() => navigate("/Portfolio")}
+              >
+                {" "}
+                Portfolio
+              </button>
+              <img
+                src="/assets/imagenes/img-Home.jpg"
+                alt="home-img"
+                className={Styles.showImg}
+              />
             </div>
           </div>
         </div>

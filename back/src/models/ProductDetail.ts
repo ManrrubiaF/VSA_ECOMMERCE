@@ -9,7 +9,7 @@ export class ProductDetail extends Model {
   id!:number;
   @Column({allowNull: true})
   color!: string;
-  @Column
+  @Column({allowNull:true})
   stock!: number;
   @Column(DataType.ARRAY(DataType.STRING))
   size!:string[];

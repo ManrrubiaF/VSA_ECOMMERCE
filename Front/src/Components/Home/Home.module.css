@@ -45,32 +45,76 @@
     margin-bottom: 2rem;
 }
 .ubicacionContainer{
-    width: 20%;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    margin: 0;
     margin-top: 1rem;
-    background-color: rgb(113, 203, 245);
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
-    margin-left: 2rem;
-    margin-right: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-bottom: 2rem;
+   
 }
 .ubicacionDiv{
-    border: solid black 1px;
-}
-.ubicacionDiv img{
+    display: flex;
+    flex-direction: column;
     width: 15rem;
+    border-bottom: solid black 1px;
+    align-content: center;
+    padding-bottom: 1rem;
 }
-.ubicacionDiv img:hover{
+.ubicacionContainer h1{
+    text-decoration: underline;
+}
+.ubicacionDiv:last-child{
+    border-bottom: none;
+}
+.ubicacionContainer p {
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0;
+}
+.whatsapp{
+    align-self: flex-start;
+}
+.whatsapp img{
+    width: 30px;
+    height: 30px;
+}
+.whatsapp img:hover{
     cursor: pointer;
 }
 
+
 .AboutContainer p {
     color: rgb(0, 0, 0);
-    padding: 1rem;
     font-style: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+}
+.showImg{
+    margin: 0;
+    margin-top: 1rem;
+    align-self: center;
+    width: 250px;
+    height: 180px;
+}
+.defaultButton{
+    background-color:  rgb(45,64,243);   
+    margin-top: 1rem;
+    position: relative;
+    left:  -2rem;
+    color: white; 
+    text-decoration: dotted;
+    font-size: 20px;
+    width: fit-content;
+}
+.defaultButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
 }
 
 @media screen and (max-device-width: 768px) and (orientation: portrait){
@@ -88,6 +132,7 @@
     }
     .AboutContainer{
         display: flex;
+        background-color: white;
         width: 100vw;
         flex-direction: column;
     }
@@ -125,6 +170,15 @@
     .ubicacionDiv img{
         width: 100%;
     }
-   
+    .defaultButton{
+        background-color:  rgb(45,64,243);   
+        margin-top: 1rem;
+        position: relative;
+        align-self: center;
+        color: white; 
+        text-decoration: dotted;
+        font-size: 20px;
+        width: fit-content;
+    }   
    
 }

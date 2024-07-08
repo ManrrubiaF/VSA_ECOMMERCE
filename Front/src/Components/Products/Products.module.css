@@ -1,35 +1,44 @@
 .divMayor {
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-content: center;
+    align-items: center;
     padding: 0.1rem;
 }
 
 .carrouselContainer{
-    color: white;
+    background-color: black;
     display: flex;
-    justify-self: center;
+    align-self: center;
     margin: 2rem;
     max-width: fit-content;
     max-height: fit-content;
+    box-shadow: 1px 1px 4px 4px rgb(255, 255, 255, 1);
+    border-radius: 13px 13px 13px 13px;
+}
+.carrouselContainer h1{
+    padding: 1rem;
+    color: white;
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
 }
 
 .containerProducts {
+    background-color: lightseagreen;
     display: grid;
-    grid-template-columns: repeat(4, 0.5fr); 
-    grid-template-rows: repeat(4, auto); 
-    gap: 1rem; 
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3);
+    gap: 1rem;
+    width: 87vw;
+    padding: 0;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-left:0.3rem;
 }
-
-
 
 .oneProduct {
     display: grid;
-    grid-template-columns: repeat(1, 0.2fr);
-    margin-top: 2rem;
+    grid-template-columns: repeat(1, 0.2fr);    
     height: 13.8rem;
     width: 13.8rem;
     background-color: white;
@@ -43,9 +52,15 @@
 .oneProduct:hover {
     box-shadow: 0px 5px 9px rgb(240, 228, 228, 2); 
 }
+.oneProduct label{
+    width: fit-content;
+    align-self: center;
+}
 
 .imageContainer{
     display: flex;
+    margin: 0;
+    padding: 0;
     width: 15rem;
     height: 10rem;
     overflow: hidden;
@@ -56,17 +71,7 @@
     object-fit: cover;
     max-width: 90%;
     max-height: 100%;
-}
-
-.cartInclude{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.cartNoInclude {
-    display: flex;
-    justify-content: center;
-  
+    border-radius: 25px 25px 25px 25px;
 }
 
 .filterDiv{

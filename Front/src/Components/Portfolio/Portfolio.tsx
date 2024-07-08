@@ -1,8 +1,8 @@
 import Styles from "./Portfolio.module.css";
 import { useAppSelector, useAppDispatch } from "../../Redux/Hooks";
 import axios from "axios";
-import { setData } from "../../Redux/Slice/contactSlice";
 import { useEffect, useRef } from "react";
+import { setPortfolio } from "../../Redux/Slice/PortfolioSlice";
 
 export default function Portfolio() {
   const BACK_URL = process.env.REACT_APP_BACK_URL;
@@ -12,7 +12,7 @@ export default function Portfolio() {
   const intervalRef = useRef<NodeJS.Timeout>();
 
   useEffect(() => {
-    if (!Portfolio_array) {
+    if (Portfolio_array.length === 0) {
       getData();
     }
     carouselRef.current = Array.from(
@@ -63,7 +63,7 @@ export default function Portfolio() {
   const getData = async () => {
     try {
       const response = await axios.get(`${BACK_URL}/portfolio`);
-      dispatch(setData(response.data));
+      dispatch(setPortfolio(response.data));
     } catch (error) {
       console.error(error);
     }
@@ -74,7 +74,6 @@ export default function Portfolio() {
       <div className={Styles.HeadContainer}>
         <h1> Portfolio </h1>
       </div>
-
       <div className={Styles.gridContainer}>
         {Portfolio_array.length > 0 ? (
           Portfolio_array.map((onePic) => (

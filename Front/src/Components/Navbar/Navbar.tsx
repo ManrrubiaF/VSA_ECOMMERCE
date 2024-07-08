@@ -3,12 +3,17 @@ import { useEffect, useState } from "react";
 import { useAppDispatch } from "../../Redux/Hooks";
 import { useNavigate } from "react-router-dom";
 import { resetPagination } from "../../Redux/Slice/PaginationSlice";
+import { useAppSelector} from '../../Redux/Hooks'
 
 export default function NavBar() {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
   const [isMobile, setIsMobile] = useState<Boolean>(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const data = useAppSelector((state) => state.data)
+  const facebook = data.socialLinks?.find((link) => link.includes('facebook')) || null;
+  const instagram = data.socialLinks?.find((link) => link.includes('instagram')) || null;   
+    
 
   useEffect(() => {
     const checkIsMobile = () => {
@@ -86,12 +91,9 @@ export default function NavBar() {
                 </li>
                 <li onClick={() => {navigate("/ControlPlagas"); setIsMobileMenuOpen(false)}}>
                   Control de Plagas
-                </li>
-                <li onClick={() => {navigate("/Portfolio"); setIsMobileMenuOpen(false)}}>
-                  Portfolio
-                </li>
-                
-                <li onClick={handleProductsClick}>Productos</li>
+                </li>                
+                <li onClick={handleProductsClick}>
+                  Tu tienda online.  Productos | Insumos</li>
               </ul>
             </div>
           )}
@@ -144,20 +146,30 @@ export default function NavBar() {
               {" "}
               Seguridad contra incendios
             </button>
-            <button 
-              className={Styles.defaultButton}
-              onClick={() => navigate("/Portfolio")}
-            >
-              {" "}
-              Portfolio
-            </button>
             <button
               className={Styles.defaultButton}
               onClick={handleProductsClick}
             >
               {" "}
-              Productos{" "}
+              Tu tienda online
+              Productos | Insumos{" "}
             </button>
+            {facebook && (
+                <div className={Styles.socialContainer}>
+                    <img src='/assets/icons/facebook.svg' alt='Facebook icon' />
+                    <a href={facebook} target="_blank" rel="noopener noreferrer"> VSA Estudios </a>
+                </div>
+            )
+            }
+            {instagram ? (
+                <div className={Styles.socialContainer}>
+                    <img src='/assets/icons/instagram.svg' alt='Instagram icon' />
+                    <a href={instagram} target="_blank" rel="noopener noreferrer"> VSA Estudios </a>
+                </div>
+            ):(
+              <div className="display:none"></div>
+            )
+            }
           </div>
         </div>
       )}

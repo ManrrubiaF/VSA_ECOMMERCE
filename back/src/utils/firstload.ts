@@ -24,15 +24,15 @@ async function firstload() {
             const productCreated = await Product.create({
                 price,
                 name,
-                description,
+                description: description || "",
                 active,
-                category
+                category: category || "",
             })
             for (const oneDetail of details) {
                 await ProductDetail.create({
-                    color: oneDetail.color,
-                    stock: oneDetail.stock,
-                    image: oneDetail.image,
+                    color: oneDetail.color || null,
+                    stock: oneDetail.stock || null,
+                    image: oneDetail.image || [],
                     productId: productCreated.id
                 })
             }
