@@ -3,4 +3,6 @@
 * Footer adios?
 * maps
 * zoom portfolio > galeria de fotos. 
+*zoom productos
+*resize detail product
 * volver del detail no mantiene el filtro

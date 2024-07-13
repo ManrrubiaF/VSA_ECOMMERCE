@@ -153,6 +153,7 @@ export default function DashboardProductDetail() {
           },
         }
       );
+      console.log(response.data)
       setThisProduct(response.data);
       toast.success("Product Updated");
     } catch (error: any) {
