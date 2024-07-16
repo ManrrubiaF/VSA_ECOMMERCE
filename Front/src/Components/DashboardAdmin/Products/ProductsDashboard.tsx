@@ -66,7 +66,7 @@ export default function ProductsDashBoard() {
   }, [filter.category, filter.order]);
 
   const handleFilters = () => {
-    let products: Product[] = productData.slice();
+    let products: Product[] = allProduct.slice();
 
     if (filter.category !== "") {
       products = allProduct.filter(
@@ -75,19 +75,22 @@ export default function ProductsDashBoard() {
     }
 
     if (filter.order === "Ascending") {
-      products = sortByAscendingPrice(products);
+      products = sortByAscendingName(products);
+      console.log(products)
     } else if (filter.order === "Descending") {
-      products = sortByDescendingPrice(products);
+      products = sortByDescendingName(products);
+      console.log(products, "des")
     }
     dispatch(setProducts(products));
+    setAllProduct(products)
   };
 
-  const sortByAscendingPrice = (products: Product[]) => {
-    return products.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+  const sortByAscendingName = (products: Product[]) => {
+    return products.sort((a, b) => a.name.localeCompare(b.name));
   };
 
-  const sortByDescendingPrice = (products: Product[]) => {
-    return products.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+  const sortByDescendingName = (products: Product[]) => {
+    return products.sort((a, b) => b.name.localeCompare(a.name));
   };
 
   const handleClear = () => {
@@ -109,19 +112,18 @@ export default function ProductsDashBoard() {
 
   const startIndex = (currentPage - 1) * elementsPerPage;
   const endIndex = currentPage * elementsPerPage;
-  const productsOnPage = productData.slice(startIndex, endIndex);
+  const productsOnPage = allProduct.slice(startIndex, endIndex);
 
-  console.log(productsOnPage);
 
   return (
     <div className={Styles.divMayor}>
       <div className={Styles.filterDiv}>
         <select name="order" onChange={handleOrderChange} value={filter.order}>
           <option value="" disabled>
-            Ordenar por precio
+            Ordenar Alfabeticamente
           </option>
-          <option value="Ascending">Ascendente (Menor a Mayor) </option>
-          <option value="Descending">Descendente (Mayor a Menor)</option>
+          <option value="Ascending">Ascendente (A a la Z) </option>
+          <option value="Descending">Descendente (Z a la A)</option>
         </select>
         <select
           name="Category"

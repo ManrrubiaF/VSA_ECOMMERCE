@@ -8,6 +8,7 @@ productRouter.post('/create', accessMiddleware.adminValidation, productHandler.c
 productRouter.get('/active', productHandler.getActiveProducts);
 productRouter.put('/update/:id', accessMiddleware.adminValidation, productHandler.updateProduct);
 productRouter.delete('/delete/:id', accessMiddleware.adminValidation, productHandler.deleteProduct);
+productRouter.delete('/delete/detail/:id', accessMiddleware.adminValidation, productHandler.deleteDetail);
 productRouter.get('/:id', productHandler.getProductById);
 productRouter.get('/', accessMiddleware.accessValidation, productHandler.getAllProducts)
 

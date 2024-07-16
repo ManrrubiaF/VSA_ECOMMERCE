@@ -1,7 +1,7 @@
 * Impedir poder eliminar usuario propio. - OK
-* Adaptative mode.
-* Footer adios?
-* maps
+* Adaptative mode.-OK
+* Footer adios?-OK
+* maps-descartado
 * zoom portfolio > galeria de fotos. 
 *zoom productos
 *resize detail product

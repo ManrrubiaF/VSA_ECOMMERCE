@@ -3,10 +3,11 @@ import Styles from "./ProductDetailsDashboard.module.css";
 import { ChangeEvent, DragEvent, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate, useParams } from "react-router-dom";
-import { useAppSelector } from "../../../Redux/Hooks";
+import { useAppDispatch, useAppSelector } from "../../../Redux/Hooks";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import produce from "immer";
+import { setProducts } from "../../../Redux/Slice/productSlice";
 import _ from "lodash";
 
 type Product = {
@@ -56,6 +57,7 @@ export default function DashboardProductDetail() {
     category: "",
     details: [],
   });
+  const dispatch = useAppDispatch()
 
   useEffect(() => {
     chargeProduct();
@@ -153,8 +155,12 @@ export default function DashboardProductDetail() {
           },
         }
       );
-      console.log(response.data)
-      setThisProduct(response.data);
+      
+      dispatch(setProducts(response.data))
+      const productUpdated = products.find((product: Product) => product.id === thisProduct.id)
+      if(productUpdated){
+        setThisProduct(dataUpdate);
+      }
       toast.success("Product Updated");
     } catch (error: any) {
       toast.error(error.message);
@@ -216,6 +222,7 @@ export default function DashboardProductDetail() {
     } as Detail;
     setNewColor("");
     setDetailSelected(newDetail);
+    setShowInput(!showInput)
     setDataUpdate((prevState) =>
       produce(prevState, (draft) => {
         const detailUpdate = draft;
