@@ -17,12 +17,12 @@ const sequelize = new Sequelize({
   port: config.DB_PORT,
   models: [__dirname + '/models'],
   logging: false,
-  /*dialectOptions: {
+  dialectOptions: {
     ssl: {
       sslmode: 'require'
     },
     connectionTimeout: 100000
-  },*/
+  },
 });
 
 export {
