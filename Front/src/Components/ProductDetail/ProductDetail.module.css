@@ -31,6 +31,7 @@
     display: flex;
     max-width:30rem;
     max-height: 30rem;
+    cursor: zoom-in;
 }
 
 .showImg{
@@ -38,6 +39,7 @@
     width: 20rem;
     height: 20rem;
     border: 1px solid black;
+    cursor: zoom-in;
     
 }
 
@@ -139,6 +141,39 @@
     box-shadow: 3px 3px 8px 8px rgba(0, 0, 0, 0.8);
     background-color: black;
     color: white;
+}
+.zoomModal {
+    margin-top: 2rem;
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000; 
+    
+}
+.zoomModal:hover{
+    cursor: zoom-out;
+}
+
+.zoomedImage {
+    margin-top: 5rem;
+    transition: transform 0.3s ease;
+    max-width: 90vw; 
+    max-height: 80vh; 
+    object-fit: cover; 
+}
+
+.zoomedImageContainer {
+    max-width: 90vw; 
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomedImage:hover {
+    cursor: zoom-out; 
 }
 
 @media screen and (max-device-width: 768px) and (orientation: portrait){
