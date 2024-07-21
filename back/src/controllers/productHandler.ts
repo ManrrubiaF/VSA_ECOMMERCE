@@ -112,9 +112,10 @@ const deleteProduct = async (req: Request, res: Response) => {
     const { id } = req.params
     try {
         const productExist = await Product.findByPk(id)
+        console.log("productExist", productExist)
         if (productExist) {
-            await productExist.destroy()
-            res.status(200).send('El producto se eliminará en 7 dias')//setear cronjob
+            await productExist.destroy({force:true})
+            res.status(200).send('El producto ha sido eliminado')
         } else {
             res.status(404).send('Hubo un error al buscar el producto')
         }

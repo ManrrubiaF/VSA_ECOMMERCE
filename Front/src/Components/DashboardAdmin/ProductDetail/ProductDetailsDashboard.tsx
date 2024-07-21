@@ -336,7 +336,11 @@ export default function DashboardProductDetail() {
   const deleteProduct = async () => {
     try {
       const response = await axios.delete(
-        `${BACK_URL}/product/delete/${thisProduct.id}`
+        `${BACK_URL}/product/delete/${thisProduct.id}`,{
+          headers: {
+            authorization: `Bearer ${token}`,
+          },
+        }
       );
       toast.success(response.data);
       navigate(-1);

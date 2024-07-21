@@ -6,3 +6,4 @@
 *zoom productos - ok
 *resize detail product - ok
 * volver del detail no mantiene el filtro
+* agregar whatsapp a la DB
