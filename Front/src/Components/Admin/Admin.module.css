@@ -4,7 +4,6 @@
     width: 90vw;
     -ms-flex-align: center;
     justify-content: center;    
-    overflow: auto;
 }
 
 .buttonContainer{

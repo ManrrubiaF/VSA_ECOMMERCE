@@ -7,22 +7,25 @@
 
 .divContainer{
     display: flexbox;
-    justify-self: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 
 .carousel{
     display:flex;
-    width: 40rem;
-    max-height: 20rem;
+    justify-content: center;   
+    width: 90vw;
+    height: 20rem;
     margin-top: 0;
+    background-color: rgba(78, 78, 236, 0.822);
 }
 
 .Showimg{
     object-fit:cover;
+    justify-items: center;
     max-width: 90vw;
-    max-height: 30%;
+    max-height: 20rem;
     margin-top: 0;
     
     

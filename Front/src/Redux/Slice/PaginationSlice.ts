@@ -8,7 +8,7 @@ type Pagination = {
 
 const initialState: Pagination = {
     currentPage: 1,
-    elementsPerPage: 12,
+    elementsPerPage: 8,
     totalPage: 1,
 }
 
