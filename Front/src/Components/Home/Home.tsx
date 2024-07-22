@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef,useLayoutEffect, } from "react";
 import { useAppSelector } from "../../Redux/Hooks";
 import { useAppDispatch } from "../../Redux/Hooks";
 import { setData } from "../../Redux/Slice/contactSlice";
@@ -35,11 +35,6 @@ export default function Home() {
     }
   }, [dataAbout]);
 
-  useEffect(() => {
-    if (carouselRef.current.length > 0) {
-      handleCarousel();
-    }
-  }, [carouselRef.current]);
   useEffect(() => {
     const hasInfo = Object.values(dataAbout).some(
       (data) => data === ("" || 0 || [])
@@ -86,8 +81,13 @@ export default function Home() {
       intervalRef.current = setInterval(nextImage, 3000);
     });
   };
-
   useEffect(() => {
+    if (carouselRef.current.length > 0) {
+      handleCarousel();
+    }
+  }, [carouselRef.current]);
+
+  useLayoutEffect(() => {
     carouselRef.current = Array.from(
       document.querySelectorAll(`.${Styles.carousel}`)
     ) as HTMLDivElement[];
@@ -96,7 +96,7 @@ export default function Home() {
         clearInterval(intervalRef.current);
       }
     };
-  }, []);
+  }, [carouselRef.current]);
 
   return (
     <div className={Styles.divMayor}>

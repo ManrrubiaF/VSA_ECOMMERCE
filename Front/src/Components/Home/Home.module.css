@@ -27,9 +27,15 @@
     max-width: 90vw;
     max-height: 20rem;
     margin-top: 0;
-    
-    
+    display: none;
+    transform: translateX(100%);
 }
+  
+.Showimg:first-child {
+    display: block;
+    transform: translateX(0);
+}
+  
 
 .AboutContainer {
     display: flex;
