@@ -89,6 +89,7 @@ export default function Products() {
   const endIndex = currentPage * elementsPerPage;
   const productsOnPage = productData.slice(startIndex, endIndex);
 
+
   useEffect(() => {
     getProducts();
   }, []);
@@ -117,10 +118,10 @@ export default function Products() {
       <div className={Styles.filterDiv}>
         <select name="order" onChange={handleOrderChange} value={filter.order}>
           <option value="" disabled>
-            Ordenar por precio
+            Ordenar Alfabeticamente
           </option>
-          <option value="Ascending">Ascendente (Menor a Mayor) </option>
-          <option value="Descending">Descendente (Mayor a Menor)</option>
+          <option value="Ascending">Ascendente (A a la Z) </option>
+          <option value="Descending">Descendente (Z a la A)</option>
         </select>
         <select
           name="Category"

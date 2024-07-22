@@ -76,13 +76,11 @@ export default function ProductsDashBoard() {
 
     if (filter.order === "Ascending") {
       products = sortByAscendingName(products);
-      console.log(products)
+   
     } else if (filter.order === "Descending") {
       products = sortByDescendingName(products);
-      console.log(products, "des")
     }
-    dispatch(setProducts(products));
-    setAllProduct(products)
+    setAllProduct(products);
   };
 
   const sortByAscendingName = (products: Product[]) => {
@@ -95,10 +93,8 @@ export default function ProductsDashBoard() {
 
   const handleClear = () => {
     dispatch(resetState());
-    if (allProduct?.length > 0) {
-      dispatch(setProducts(allProduct));
-      dispatch(setCurrentPage(1));
-    }
+    setAllProduct(productData);
+    dispatch(setCurrentPage(1));
   };
 
   const handleCategoryChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -113,7 +109,6 @@ export default function ProductsDashBoard() {
   const startIndex = (currentPage - 1) * elementsPerPage;
   const endIndex = currentPage * elementsPerPage;
   const productsOnPage = allProduct.slice(startIndex, endIndex);
-
 
   return (
     <div className={Styles.divMayor}>
