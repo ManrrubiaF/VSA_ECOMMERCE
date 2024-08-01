@@ -106,7 +106,7 @@ export default function ProductDetail() {
         const currentDetail = showDetail?.details.find((detail) => detail.color === value) as Detail;
         setDetailSelected(currentDetail)
     }
-
+    
 
     return (
         <div className={Styles.divMayor}>
@@ -141,7 +141,8 @@ export default function ProductDetail() {
                             )}
                             <div className={Styles.divWhatsapp}>
                                 <img src='/assets/icons/whatsapp.svg' alt='whatsapp icon' />
-                                <a href={`https://wa.me/${data.whatsapp}/?text=${whatsappText}`} target="_blank" rel="noopener noreferrer">Pregunta por este producto</a>
+                                <a href={`https://api.whatsapp.com/send?phone=${data.whatsapp}&text=${whatsappText}`} target="_blank" rel="noopener noreferrer">Pregunta por este producto</a>
+                                
                             </div>
                         </div>
 
