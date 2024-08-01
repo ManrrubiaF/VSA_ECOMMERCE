@@ -12,9 +12,15 @@ export class Data extends Model {
     videos!:string[];
     @Column(DataType.ARRAY(DataType.STRING))
     photos!:string[];
-    @Column({allowNull: true})
+    @Column({ 
+        type: DataType.BIGINT, 
+        allowNull: true 
+      })
     phone!:number;
-    @Column({allowNull: true})
+    @Column({ 
+        type: DataType.BIGINT, 
+        allowNull: true 
+      })
     whatsapp!:number;
     @Column({defaultValue: ""})
     email!:string;
