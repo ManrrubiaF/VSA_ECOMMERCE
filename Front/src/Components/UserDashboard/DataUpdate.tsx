@@ -13,8 +13,8 @@ import { useNavigate } from "react-router-dom";
 interface Data {
   id: number;
   aboutText: string;
-  phone: number;
-  whatsapp: number;
+  phone: string;
+  whatsapp: string;
   email: string;
   photos: string[];
   videos: string[];

@@ -3,8 +3,8 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 type Data = {
     id: number;
     aboutText: string;
-    phone: number;
-    whatsapp: number;
+    phone: string;
+    whatsapp: string;
     email: string;
     photos: string[];
     videos: string[];
@@ -15,8 +15,8 @@ type Data = {
 const initialState: Data = {
     id: 0,
     aboutText: '',
-    phone: 0,
-    whatsapp: 0,
+    phone: '',
+    whatsapp: '',
     email: '',
     photos: [],
     videos: [],

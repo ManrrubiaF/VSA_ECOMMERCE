@@ -9,8 +9,8 @@ import Styles from "./Home.module.css";
 interface DataInfo {
   id: number;
   aboutText: string;
-  phone: number;
-  whatsapp: number;
+  phone: string;
+  whatsapp: string;
   email: string;
   videos: string[];
   photos: string[];
