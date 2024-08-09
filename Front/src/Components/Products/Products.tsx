@@ -63,9 +63,9 @@ export default function Products() {
     }
 
     if (filter.order === "Ascending") {
-      products = sortByAscendingPrice(products);
+      products = sortByAscendingName(products);
     } else if (filter.order === "Descending") {
-      products = sortByDescendingPrice(products);
+      products = sortByDescendingName(products);
     }
     dispatch(setProducts(products));
   };
@@ -77,12 +77,12 @@ export default function Products() {
     }
   };
 
-  const sortByAscendingPrice = (products: Product[]) => {
-    return products.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
+  const sortByAscendingName = (products: Product[]) => {
+    return products.sort((a, b) => a.name.localeCompare(b.name));
   };
 
-  const sortByDescendingPrice = (products: Product[]) => {
-    return products.sort((a, b) => parseFloat(b.price) - parseFloat(a.price));
+  const sortByDescendingName = (products: Product[]) => {
+    return products.sort((a, b) => b.name.localeCompare(a.name));
   };
 
   const startIndex = (currentPage - 1) * elementsPerPage;
