@@ -3,6 +3,7 @@ import { sequelize } from "./src/db";
 const PORT = 3001;
 import { Request,Response } from "express";
 import routes from "./src/routes";
+import deleteSpaces from "./src/utils/deletespaces";
 //import firstload from "./src/utils/firstload";
 
 server.use('/', routes);
@@ -12,8 +13,10 @@ server.get('/', (req: Request, res: Response) => {
 
 sequelize.sync({force: false}).then(() => {
   //firstload();
+  
   server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
   })
+  deleteSpaces()
 }).catch((error:Error) => console.error(error))
 
