@@ -204,7 +204,7 @@ const getProductById = async (req: Request, res: Response) => {
         res.status(500).json(error)
     }
 }
-const fetchProductById = async (id) => {
+const fetchProductById = async (id: string) => {
     try {
       return await Product.findOne({
         where: { id },
@@ -219,7 +219,7 @@ const fetchProductById = async (id) => {
       });
     } catch (error) {
       console.error(error);
-      return null; // O puedes lanzar un error si prefieres manejarlo en la llamada.
+      return null; 
     }
   };
 
