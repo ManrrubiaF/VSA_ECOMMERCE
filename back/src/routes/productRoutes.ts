@@ -11,5 +11,38 @@ productRouter.delete('/delete/:id', accessMiddleware.adminValidation, productHan
 productRouter.delete('/delete/detail/:id', accessMiddleware.adminValidation, productHandler.deleteDetail);
 productRouter.get('/:id', productHandler.getProductById);
 productRouter.get('/', accessMiddleware.accessValidation, productHandler.getAllProducts)
+productRouter.get('/preview/:id', async (req, res) => {
+    const productId = req.params.id;
+    
+    // Obtén los datos del producto desde tu base de datos o API
+    const product = await productHandler.fetchProductById(productId);
 
+    const defaultImage = "https://estudiosvsa.com.ar/assets/icons/vsaLOGO.jpg";
+const imageUrl = product?.details[0]?.image[0] || defaultImage;
+
+    if(product !== null){
+        res.send(`
+            <!DOCTYPE html>
+            <html lang="en">
+              <head>
+                <meta charset="utf-8" />
+                <meta property="og:title" content="${product.name}" />
+                <meta property="og:description" content="${product.description}" />
+                <meta property="og:image" content="${imageUrl}" />
+                <meta property="og:url" content="https://estudiosvsa.com.ar/products/${productId}" />
+                <title>${product.name}</title>
+              </head>
+              <body>
+                <div id="root"></div>
+                <script src="/path/to/react-app.js"></script>
+              </body>
+            </html>
+          `);
+    }else{
+        return res.status(404).send("not found")
+    }
+    
+    
+  });
+  
 export default productRouter;

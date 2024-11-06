@@ -204,6 +204,24 @@ const getProductById = async (req: Request, res: Response) => {
         res.status(500).json(error)
     }
 }
+const fetchProductById = async (id) => {
+    try {
+      return await Product.findOne({
+        where: { id },
+        include: {
+          model: ProductDetail,
+          where: {
+            stock: {
+              [Op.gt]: 0
+            }
+          }
+        }
+      });
+    } catch (error) {
+      console.error(error);
+      return null; // O puedes lanzar un error si prefieres manejarlo en la llamada.
+    }
+  };
 
 export default {
     createProduct,
@@ -212,5 +230,6 @@ export default {
     getAllProducts,
     getProductById,
     getActiveProducts,
-    deleteDetail
+    deleteDetail,
+    fetchProductById
 } 
